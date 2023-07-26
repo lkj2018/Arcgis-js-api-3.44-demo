@@ -1,0 +1,60 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>气象灾害管理系统</title>
+
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="sub.css" rel="stylesheet" type="text/css" />
+    <script src='jquery-1.12.1.min.js'></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.44/esri/css/esri.css">
+    <script type="text/javascript" src='https://js.arcgis.com/3.44/'></script>
+
+    <script type="text/javascript" src="directReportMapUtil.js"></script>
+
+    <script type="text/javascript">
+        var mapUtil;
+        $(function () {
+            var mapData1 = window.localStorage.map
+            mapData1 = mapData1 == '' ? null : JSON.parse(mapData1);
+            mapUtil = new MapUtils({
+                "contentId": "mapDiv",
+                "baseDistrict": mapData1,
+                "callBack": InitData
+            });
+        });
+        //初始化数据
+        function InitData() {
+            fillMapData();
+        }
+        //填充地图数据
+        function fillMapData() {
+            var mapData =  window.localStorage.map
+            if ('' != mapData && null != mapData && 'null' != mapData) {
+                mapUtil.drawMap(mapData);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form method="post" id="downFile">
+        <input type="hidden" id="renameFileName" name="renameFileName" />
+    </form>
+    <div class="location">
+        <span>当前位置：灾情直报 &nbsp;&gt;&nbsp;</span>
+        灾情详情
+
+    </div>
+    <div class="main1">
+        <div class="fixedWidth">
+            <div id="directDetail" class="disasterMsgEdit disasterMsgDeta">
+                <h1 id="one">灾情基本信息</h1>
+                <div class="mapBorder" id="mapDiv"></div>
+            </div>
+        </div>
+</body>
+
+</html>

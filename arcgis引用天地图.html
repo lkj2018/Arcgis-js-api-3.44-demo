@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>天地图加载</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/3.44/esri/css/esri.css">
+  <script type="text/javascript" src='https://js.arcgis.com/3.44/'></script>
+
+  <script>
+    var map;
+    require([
+      "esri/map", "esri/layers/WebTiledLayer", 
+      // "dojo/parser",
+      // "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"
+    ], function (
+      Map, WebTiledLayer, 
+      // parser
+    ) {
+      // parser.parse();
+
+      map = new Map("viewDiv", {
+        center: [116.382422, 39.91405],
+        zoom: 8
+      });
+
+      var webtiles1 = new WebTiledLayer("http://{subDomain}.tianditu.gov.cn/DataServer?T=vec_w&x={col}&y={row}&l={level}&tk=d5eab24a4d6dd934909b22de08f86d9f",
+        {
+          subDomains: ["t0", "t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+        });
+
+      var webtiles2 = new WebTiledLayer("http://{subDomain}.tianditu.gov.cn/DataServer?T=cva_w&x={col}&y={row}&l={level}&tk=d5eab24a4d6dd934909b22de08f86d9f",
+        {
+          subDomains: ["t0", "t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+        });
+      map.addLayer(webtiles1);
+      map.addLayer(webtiles2);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>

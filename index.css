@@ -1,0 +1,89 @@
+/* CSS Document */
+*{margin:0; padding:0;}
+html,body{overflow:hidden;}
+body{font-family:"微软雅黑", Verdana, Geneva, sans-serif; font-size:14px; color:#464646;}
+ul, li{list-style:none;}
+img{border:0;}
+em{font-style:normal;}
+h1, h2, h3, h4, h5, font{font-weight:normal; font-size:14px;}
+th{font-weight:normal;}
+a{text-decoration:none; color:#464646;}
+a:hover{text-decoration:underline; color:#0B78D8;}
+
+
+.top{background:url(../imgs/topBg.png) repeat-x; height:72px; position:relative; z-index:200;}
+.logoTitle{background:url(../imgs/logo.png) no-repeat; height:72px;}
+.nav{position:absolute; left:360px; bottom:0; width:1000px;}
+.nav li{float:left; position:relative;}
+.nav li a{color:#fff; outline:none; font-size:16px; height:40px; line-height:40px; display:block; padding:0 15px; border-top-left-radius:5px; border-top-right-radius:5px; -moz-border-top-left-radius:5px; 
+-moz-border-top-right-radius:5px;/* Old Firefox*/}
+.nav li a:hover{text-decoration:none; background:#4188C6;}
+.nav li a.selectNav{background:#fff; color:#1068B5;}
+.nav li ul{position:absolute; left:-16px; top:38px; display:none;}
+.nav li ul li{float:none; width:130px;}
+.nav li ul li.topArrow{ background:url(../imgs/arrow_01.png) no-repeat center top; padding-top:5px;}
+.nav li ul li a{color:#5da7e8; outline:none; background:#ECF6FF; border:1px solid #C6E0F5; border-top:0; font-size:14px; text-align:center; height:32px; line-height:32px; padding:0; border-top-left-radius:0; border-top-right-radius:0; -moz-border-top-left-radius:0; -moz-border-top-right-radius:0;/* Old Firefox*/}
+.nav li ul li a:hover{color:#1e83da; background:#DDEFFF;}
+
+
+.tipBar{position:absolute; right:0; top:0;}
+.tipBar li{float:left; background:url(../imgs/line_01.png) no-repeat left top; padding-left:2px; height:28px;}
+.tipBar li a{width:38px; height:28px; display:block; outline:none;}
+.tipBar li.sysMsg a{background:url(../imgs/ico_04.png) no-repeat center center;}
+.tipBar li.sysMsg a span{background:url(../imgs/ico_12.png) no-repeat; width:6px; height:6px; display:block; position:relative; top:7px; left:22px;}
+.tipBar li.set a{background:url(../imgs/ico_01.png) no-repeat center center;}
+.tipBar li.help a{background:url(../imgs/ico_24.png) no-repeat center center;}
+.tipBar li.logoutSys a{background:url(../imgs/ico_03.png) no-repeat center center;}
+.tipBar li.userLogin a{background:url(../imgs/ico_02.png) no-repeat center center;}
+.tipBar li.userMsg span{background:url(../imgs/ico_02.png) no-repeat 10px center; font-size:12px; color:#c5e0f8; height:28px; line-height:28px; padding:0 10px 0 28px;}
+.tipBar li.sysMsg a:hover{background:url(../imgs/icoHover_04.png) no-repeat center center;}
+.tipBar li.set a:hover{background:url(../imgs/icoHover_01.png) no-repeat center center;}
+.tipBar li.help a:hover{background:url(../imgs/icoHover_24.png) no-repeat center center;}
+.tipBar li.logoutSys a:hover{background:url(../imgs/icoHover_03.png) no-repeat center center;}
+.tipBar li.userLogin a:hover{background:url(../imgs/icoHover_02.png) no-repeat center center;}
+
+.window{border:1px solid #A8CEEF; background:#fff;}
+.window h2{background:#D3E9FC; border-bottom:1px solid #ADD0ED; height:33px; line-height:34px; padding-left:10px;}
+.window h2 span{font-size:16px; color:#1068b5; float:left;}
+a.colseIco{background:url(../imgs/close_01.png) no-repeat center center; height:34px; width:34px; display:block; float:right; outline:none;}
+a.colseIco:hover{background:url(../imgs/close_02.png) no-repeat center center;}
+.windTableList{border-collapse:collapse; width:100%;}
+.windTableList td{border-left:1px solid #C0DAF2; border-bottom:1px solid #C0DAF2; padding:5px; text-align:center;}
+.windTableList thead td{background:#E8F4FE;}
+.windTableList tbody a{text-decoration:underline;}
+.windTableList tbody a:hover{text-decoration:none;}
+
+.window .borderTop{border-top:1px solid #C0DAF2;}
+
+.windDetail{width:100%; border-collapse:collapse;}
+.windDetail th, .windDetail td{padding:5px; border-left:1px solid #C0DAF2; border-top:1px solid #C0DAF2;}
+.windDetail th{text-align:right; background:#F5FAFF;}
+
+/*---灾情详细信息的图片板块 浮动框---*/
+.imgBar{height:190px; width:390px; margin:5px; overflow:hidden; position:relative;}
+a.leftArrow, a.rightArrow{width:16px; height:30px; display:block; position:absolute; top:50%; margin-top:-15px; outline:none;}
+a.leftArrow{background:url(../imgs/arrow_04.png) no-repeat; left:10px;}
+a.rightArrow{background:url(../imgs/arrow_05.png) no-repeat; right:10px;}
+a.leftArrow:hover{background:url(../imgs/arrow_06.png) no-repeat;}
+a.rightArrow:hover{background:url(../imgs/arrow_07.png) no-repeat;}
+/*---end---*/
+
+/*---表单元素---*/
+.btnSecond, .mainBtn, .addBtn{background:#D3E9FC; border:1px solid #A8CEEF; color:#0b78d8; height:30px; width:80px; font-family:"微软雅黑", Verdana, Geneva, sans-serif; font-size:14px; border-radius:3px; -moz-border-radius:3px;/* Old Firefox*/ cursor:pointer; margin:0 5px;}
+.btnSecond:hover, .paging li.pagingBtn a:hover, .addBtn:hover{background:#E5F4FE; border:1px solid #BDE1F8; color:#0C88E9;}
+.addAttaBtn{background:#D3E9FC url(../imgs/ico_16.png) no-repeat 10px center; text-align:left; padding-left:30px; width:100px;}
+.addAttaBtn:hover{background:#D3E9FC url(../imgs/ico_16.png) no-repeat 12px center;}
+.mainBtn{background:url(../imgs/btnBg_01.png) repeat-x; height:35px; color:#fff; width:110px; border:0; border-radius:5px; -moz-border-radius:5px;/* Old Firefox*/}
+.mainBtn:hover{background:url(../imgs/btnBg_02.png) repeat-x;}
+.addBtn{background:#D3E9FC url(../imgs/ico_16.png) no-repeat center center; width:26px; height:26px;}
+.addBtn:hover{background:#E5F4FE url(../imgs/ico_16.png) no-repeat center center;}
+
+input[type=text]{height:22px; line-height:22px; border:1px solid #ccc; border-radius:3px; -moz-border-radius:3px;/* Old Firefox*/ width:155px; vertical-align:middle;}
+select{height:22px; border:1px solid #ccc; border-radius:3px; -moz-border-radius:3px; vertical-align:middle;}
+textarea{border:1px solid #ccc; border-radius:3px; -moz-border-radius:3px; resize:none;}
+/*---end---*/
+
+.imgMask{background:url(../imgs/bg.png) repeat; width:100%; height:100%; position:absolute; left:0; top:0; z-index:800; width:100%; height:100%; text-align:center;}
+.imgMask a.colseIco{position:absolute; right:0px; top:0;}
+.imgMask img{margin:20px;}
+/*---灾情详细页面点击放大---*/

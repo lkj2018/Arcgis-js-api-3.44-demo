@@ -1,0 +1,1465 @@
+/* CSS Document */
+.location {
+    background: url(../imgs/locationBg.png) repeat-x;
+    height: 35px;
+    line-height: 35px;
+}
+
+.location span {
+    background: url(../imgs/ico_13.png) no-repeat 20px center;
+    height: 35px;
+    display: inline-block;
+    padding-left: 42px;
+    color: #9c9c9c;
+}
+
+.location a {
+    color: #9c9c9c;
+    text-decoration: underline;
+}
+
+.location a:hover {
+    color: #0B78D8;
+    text-decoration: none;
+}
+
+.main {
+    overflow: auto;
+    position: relative;
+}
+
+.paddingLR {
+    padding: 0 20px;
+}
+
+.fixedWidth {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.paddingTop {
+    padding-top: 20px;
+}
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+
+.divider {
+    border-top: 1px dashed #C2C2C2;
+    margin-top: 10px;
+}
+
+.dividerLine {
+    padding: 20px 0;
+    border-bottom: 1px dashed #C2C2C2;
+}
+
+/*---分隔线---*/
+
+.leftTree {
+    width: 150px;
+    overflow: auto;
+    float: left;
+    border-right: 1px solid #C2C2C2;
+}
+
+.rightContent {
+    overflow: auto;
+    float: left;
+}
+
+.searchTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.searchTable th,
+.searchTable td,
+.editTable th,
+.editTable td {
+    padding: 5px 3px;
+    white-space: nowrap;
+}
+
+.searchTable th,
+.editTable th {
+    text-align: right;
+}
+
+.tableBtns {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.tableBtns .btnSecond {
+    float: left;
+}
+
+.tableBtns select {
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+    width: 100px
+}
+
+.tableList,
+.repoTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableList td,
+.repoTable td {
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.tableList thead td,
+.repoTable thead td {
+    background: #E8F4FE;
+    border: 1px solid #C0DAF2;
+    white-space: nowrap;
+}
+
+.tableList tbody td {
+    border: 1px solid #C0DAF2;
+}
+
+.tableList tbody td a {
+    text-decoration: underline;
+    margin: 0 3px;
+}
+
+.tableList tbody td a:hover {
+    text-decoration: none;
+}
+
+.paging {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.paging ul {
+    float: right;
+}
+
+.paging li {
+    float: left;
+    color: #7D7D7D;
+    margin: 0 10px;
+}
+
+.paging li a {
+    color: #7D7D7D;
+    height: 20px;
+    line-height: 20px;
+}
+
+.paging li a:hover {
+    color: #0B78D8;
+}
+
+.paging li.pagingBtn a {
+    background: #D3E9FC;
+    border: 1px solid #A8CEEF;
+    display: block;
+    padding: 0 15px;
+}
+
+.paging li.pagingBtn a:hover {
+    text-decoration: none;
+}
+
+.paging li a.selectPaging {
+    color: #0B78D8;
+    text-decoration: underline;
+}
+
+.paging li a.selectPaging:hover {
+    color: #0B78D8;
+    text-decoration: none;
+}
+
+.window {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -200px;
+    z-index: 50;
+}
+
+.window .windowOverflow {
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.windAreaTit {
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    border-top: 1px solid #C0DAF2;
+    border-bottom: 1px dashed #C0DAF2
+}
+
+.windBtns {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.mask {
+    background: url(../imgs/bg.png) repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 49;
+}
+
+.windEdit {
+    padding: 10px 0;
+}
+
+.windEdit li {
+    padding: 5px 0;
+}
+
+.windEdit li label {
+    width: 130px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.addChar li label {
+    width: 100px;
+}
+
+.window .contactInfoEdit li label {
+    width: 65px;
+}
+
+.batchImport .windEdit {
+    padding: 20px 0;
+}
+
+.batchImport .windEdit li label {
+    width: 70px;
+}
+
+.batchImport .windEdit li input {
+    vertical-align: middle;
+}
+
+.batchImport .windEdit li input.btnSecond {
+    height: 28px;
+    width: 65px;
+}
+
+.batchImport .windEdit li a,
+.window .contactInfoEdit li a {
+    color: #999;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.batchImport .windEdit li a:hover,
+.window .contactInfoEdit li a:hover {
+    color: #0B78D8;
+    text-decoration: none;
+}
+
+/*---灾情上报 灾情详情---*/
+.disasterMsgEdit {
+    width: 100%;
+    float: left;
+    margin: 0 10px;
+    position: relative;
+}
+
+.disasterMsgEdit h1 {
+    text-align: center;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.disasterMsgEdit .map {
+    border: 1px solid #dcdcdc;
+    height: 800px;
+    position: relative;
+    margin: 5px 0;
+}
+
+.disasterMsgEdit .tabBar .tabConts {
+    padding-top: 10px;
+}
+
+.mapTool {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+}
+
+.mapTool li {
+    background: url(../imgs/tranBg_01.png) repeat;
+    border: 1px solid #A8CEEF;
+    width: 28px;
+    height: 28px;
+    margin-bottom: -1px;
+    float: left;
+}
+
+.mapTool li a {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.mapTool li a.fullScreen {
+    background: url(../imgs/mapToolIco_01.png) no-repeat center center;
+}
+
+.mapTool li a.point {
+    background: url(../imgs/mapToolIco_02.png) no-repeat center center;
+}
+
+.mapTool li a.line {
+    background: url(../imgs/mapToolIco_03.png) no-repeat center center;
+}
+
+.mapTool li a.round {
+    background: url(../imgs/mapToolIco_04.png) no-repeat center center;
+}
+
+.mapTool li a.polygon {
+    background: url(../imgs/mapToolIco_05.png) no-repeat center center;
+}
+
+.mapTool li a.admiDivi {
+    background: url(../imgs/mapToolIco_06.png) no-repeat center center;
+}
+
+.mapTool li a.remove {
+    background: url(../imgs/mapToolIco_07.png) no-repeat center center;
+}
+
+.textTip {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 20px;
+}
+
+.mainBtns {
+    text-align: right;
+    padding: 20px 0;
+}
+
+.attaList {}
+
+.attaList li {
+    line-height: 22px;
+    background: url(../imgs/ico_17.png) no-repeat left center;
+    padding-left: 18px;
+}
+
+.attaList li a.deleIco {
+    background: url(../imgs/ico_18.png) no-repeat center center;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.disaRightNav {
+    width: 145px;
+    float: right;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.disaRightNav li {
+    background: url(../imgs/ico_15.png) no-repeat;
+    padding-left: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.disaRightNav li a {
+    color: #464646;
+}
+
+.disaRightNav li a:hover {
+    color: #0B78D8;
+    text-decoration: none;
+}
+
+.disaRightNav li.basicInfo {
+    background-position: 0 8px;
+}
+
+.disaRightNav li.basicLoss {
+    background-position: 0 -38px;
+}
+
+.disaRightNav li.waterHydr {
+    background-position: 0 -84px;
+}
+
+.disaRightNav li.farming {
+    background-position: 0 -129px;
+}
+
+.disaRightNav li.electricity {
+    background-position: 0 -175px;
+}
+
+.disaRightNav li.traffic {
+    background-position: 0 -220px;
+}
+
+.disaRightNav li a.selectRightNav {
+    color: #0b78d8;
+    font-size: 16px;
+}
+
+.disasterMsgDeta {
+    overflow: auto;
+}
+
+.disasterMsgEdit .tabConts .tableList textarea {
+    width: 100%;
+}
+
+.disasterMsgDeta .mapBorder {
+    border-left: 1px solid #C0DAF2;
+    border-right: 1px solid #C0DAF2;
+    padding: 5px;
+}
+
+.disasterMsgDeta .map {
+    border: 1px solid #dcdcdc;
+    height: 300px;
+    position: inherit;
+    margin: 0;
+}
+
+.disasterMsgTop {
+    height: 150px;
+    overflow: auto;
+}
+
+/*---end---*/
+
+.detailTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #C0DAF2;
+}
+
+.detailTable th,
+.detailTable td {
+    padding: 8px 5px;
+    border: 1px solid #C0DAF2;
+}
+
+.detailTable th {
+    text-align: right;
+    background: #F5FAFF;
+}
+
+.editTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.redAste {
+    color: #f00;
+    margin-right: 3px;
+}
+
+.grayAste {
+    color: #464646;
+    margin-right: 3px;
+}
+
+.treeList {
+    padding: 10px 0 0 10px;
+}
+
+.treeList li {
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+.treeList li span {
+    background: url(../imgs/arrow_03.gif) no-repeat left center;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.treeList li li {
+    padding-left: 20px;
+    display: none;
+}
+
+.treeList .showTreeList {
+    background: url(../imgs/arrow_02.gif) no-repeat left center;
+}
+
+/*---角色与权限管理---*/
+.charCompMana,
+.notiRelease,
+.sysHelp {
+    width: 800px;
+    margin: 20px auto 0 auto;
+}
+
+.charCompMana .title {
+    height: 45px;
+    border: 1px solid #A7CEEF;
+}
+
+.charCompMana .title li {
+    background: #D4EAFC;
+    float: left;
+    height: 45;
+    line-height: 45px;
+    text-align: center;
+    color: #0D68B9;
+    font-size: 16px;
+}
+
+.charCompMana .title li.charTit {
+    width: 196px;
+    border-right: 1px solid #A7CEEF;
+    position: relative;
+}
+
+.charCompMana .title li.featTit {
+    width: 400px;
+    border-right: 1px solid #A7CEEF;
+}
+
+.charCompMana .title li.dataTit {
+    width: 200px;
+}
+
+.charCompMana .title .addIco {
+    background: url(../imgs/ico_16.png) no-repeat center center;
+    height: 25px;
+    width: 25px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.charCompMana .tab {
+    border: 1px solid #A7CEEF;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.charCompMana .tabMenu {
+    float: left;
+    background: #fff;
+    width: 197px;
+    background: url(../imgs/border_01.gif) repeat-y right top;
+    overflow: auto;
+}
+
+.charCompMana .tabMenu li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #C0DAF2;
+    cursor: pointer;
+    background: #E8F5FE url(../imgs/border_01.gif) repeat-y right top;
+    color: #666;
+}
+
+.charCompMana .tabMenu .hover {
+    background: #f5faff url(../imgs/border_01.gif) repeat-y right top;
+    color: #464646;
+}
+
+.charCompMana .tabMenu li.selected {
+    background: #fff;
+    color: #464646;
+}
+
+.charCompMana .tabConts {
+    float: left;
+}
+
+.charCompMana .tabCont {
+    overflow: hidden;
+}
+
+.charCompMana .featCompCont {
+    float: left;
+    width: 400px;
+    border-right: 1px dashed #C0DAF2;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.charCompMana .featCompCont li,
+.charCompMana .dataCont li {
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+.charCompMana .dataCont {
+    float: left;
+    width: 200px;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.charCompMana .dataCont h4 {
+    padding: 10px;
+}
+
+.charCompBtns {
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #A7CEEF;
+    border-top: 0;
+}
+
+.charCompMana .selectComp {
+    color: #0B78D8;
+    font-weight: bold;
+}
+
+/*---end---*/
+
+/*---公告发布---*/
+.notiRelease label {
+    display: block;
+    padding: 10px 0;
+}
+
+/*---end---*/
+
+/*---系统设置---*/
+.sysSet {
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -260px;
+    border: 1px solid #C0DAF2;
+    padding: 20px 20px 0 0;
+}
+
+.sysSet li {
+    padding: 8px 0;
+}
+
+.sysSet li label {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+
+.sysSet li select {
+    width: 100px;
+}
+
+/*---end---*/
+
+/*---系统帮助---*/
+.sysHelp {
+    margin: 20px auto;
+}
+
+.sysHelp .downDocBtn {
+    width: 150px;
+    margin: 0 0 10px 0;
+}
+
+.sysHelp .sysHelpDoc {
+    border: 1px solid #DCDCDC;
+    height: 600px;
+}
+
+/*---end---*/
+
+/*---tab标签---*/
+.tabBar {
+    padding: 10px 0;
+}
+
+.tabBar .tabMenu {
+    background: url(../imgs/border_01.gif) repeat-x left bottom;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.tabBar .tabMenu li {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 4px;
+    text-align: center;
+    border: 1px solid #A7CEEF;
+    border-bottom: 0;
+    padding: 0 10px;
+    margin-right: -1px;
+    cursor: pointer;
+    background: #E8F5FE url(../imgs/border_01.gif) repeat-x left bottom;
+    color: #666;
+}
+
+.tabBar .tabMenu .hover {
+    background: #f5faff url(../imgs/border_01.gif) repeat-x left bottom;
+    color: #464646;
+}
+
+.tabBar .tabMenu li.selected {
+    border: 1px solid #A7CEEF;
+    border-bottom: 0;
+    background: #fff;
+    color: #1068B5;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+}
+
+/*---end---*/
+
+.areaTit {
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    background: url(../imgs/ico_20.gif) no-repeat left center;
+    padding-left: 10px;
+    clear: both;
+}
+
+.fixedWidthTable {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*---灾情渠道---*/
+.disaChanTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.disaChanTable td {
+    text-align: center;
+}
+
+.disaChanTable .btnSecond {
+    width: 100px;
+}
+
+/*---end---*/
+
+/*---上报表格---*/
+.repoTable {
+    border: 1px solid #C0DAF2;
+}
+
+.repoTable tbody th {
+    border: 1px solid #C0DAF2;
+}
+
+.repoTable tbody td {
+    background: #EAEAEA;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.repoTable tbody td.reported {
+    background: #3B9AEE;
+}
+
+.colorTip {
+    float: left;
+    margin-left: 20px;
+}
+
+.colorTip li {
+    float: left;
+    margin-right: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.colorTip li span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.colorTip li span.blue {
+    background: #3B9AEE;
+}
+
+.colorTip li span.gray {
+    background: #EAEAEA;
+}
+
+/*---end---*/
+
+/*---个人中心---*/
+.persCenter {
+    width: 700px;
+    margin: 20px auto 0 auto;
+}
+
+.persCenter .persModifyBtn {
+    width: 130px;
+    float: right;
+}
+
+.persCenter .notice {
+    border: 1px solid #A8CEEF;
+    padding: 15px 20px;
+    text-indent: 2em;
+    line-height: 24px;
+}
+
+.persCenter .sysRemind {
+    float: left;
+    width: 345px;
+}
+
+.persCenter .sysRemind table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.persCenter .sysRemind table th,
+.persCenter .sysRemind table td {
+    padding: 8px 5px;
+    border: 1px solid #C0DAF2;
+    text-align: center;
+}
+
+.persCenter .sysRemind table thead td {
+    background: #D4EAFC;
+    color: #0B78D8;
+    border: 1px solid #A7CEEF;
+}
+
+.persCenter .sysRemind table tbody th {
+    background: #E8F4FE;
+}
+
+.persCenter .sysRemind .msgTip {
+    border: 1px solid #D8E8F7;
+    background: #F5FAFF url(../imgs/ico_21.png) no-repeat 10px center;
+    padding-left: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px 0;
+}
+
+.persCenter .sysRemind .msgTip span {
+    font-size: 16px;
+    color: #F00;
+    padding: 0 5px;
+}
+
+.marginRight {
+    margin-right: 10px;
+}
+
+/*---end---*/
+
+/*---接口数据---*/
+.dataInterface {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.dataInterface .tab {
+    overflow: hidden;
+    background: url(../imgs/border_02.gif) repeat-y 150px top;
+}
+
+.dataInterface .tabMenu {
+    float: left;
+    border-bottom: 1px solid #A7CEEF;
+}
+
+.dataInterface .tabMenu li {
+    background: #E8F4FE url(../imgs/border_02.gif) repeat-y right top;
+    border: 1px solid #A7CEEF;
+    border-bottom: 0;
+    border-right: 0;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #666;
+}
+
+.dataInterface .tabMenu .hover {
+    background: #F5FAFF url(../imgs/border_02.gif) repeat-y right top;
+    color: #464646;
+}
+
+.dataInterface .tabMenu .selected {
+    background: #fff;
+    color: #0B78D8;
+}
+
+.dataInterface .tabConts {
+    float: left;
+    border: 1px solid #A7CEEF;
+    border-left: 0;
+    min-height: 500px;
+    width: 748px;
+}
+
+/*---end---*/
+
+.loading {
+    width: 200px;
+    height: 84px;
+    padding-top: 16px;
+    border: 1px solid #A8CEEF;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 55;
+    margin: -20px 0 0 -101px;
+    text-align: center;
+}
+
+.loading h4 {
+    height: 40px;
+    line-height: 40px;
+}
+
+.success,
+.error {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 70px;
+    line-height: 70px;
+    z-index: 56;
+    background: #F5FFE8 url(../imgs/success.png) no-repeat 20px center;
+    padding-left: 60px;
+    border: 1px solid #bdd896;
+    font-size: 16px;
+    color: #4c8201;
+    margin: -20px 0 0 -85px;
+}
+
+.error {
+    background: #FFF4F1 url(../imgs/error.png) no-repeat 20px center;
+    border: 1px solid #E29D89;
+    color: #d42e00;
+}
+
+/*---文本框弹出层---*/
+input.boxDivIco {
+    background: #fff url(../imgs/ico_22.png) no-repeat right center;
+}
+
+.textBoxDiv {
+    position: relative;
+}
+
+.textBoxDiv .hideDiv {
+    border: 1px solid #A8CEEF;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    z-index: 800;
+    width: 420px;
+}
+
+.textBoxDiv .liHeader {
+    border-bottom: 1px dashed #C0DAF2;
+    overflow: hidden;
+    padding: 8px 5px 8px 8px;
+    background: #F5FAFF;
+}
+
+.textBoxDiv .selectAll {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+}
+
+.textBoxDiv .btnBar {
+    float: right;
+}
+
+.textBoxDiv .btnBar .btnSecond {
+    width: 70px;
+    height: 28px;
+}
+
+.textBoxDiv .checkBoxLi {
+    overflow: hidden;
+    padding: 5px;
+}
+
+.textBoxDiv .checkBoxLi li {
+    float: left;
+    width: 130px;
+    white-space: nowrap;
+    padding: 3px;
+}
+
+/*---end---*/
+
+.windCheckBoxLi {
+    overflow: hidden;
+    padding: 15px 10px;
+}
+
+.windCheckBoxLi li {
+    float: left;
+    width: 89px;
+    padding: 5px 3px;
+}
+
+.windCont {
+    padding: 10px;
+    line-height: 25px;
+}
+
+/*---表格操作图标---*/
+a.view,
+a.contNews,
+a.finaNews,
+a.dele,
+a.download,
+a.reback {
+    background: url(../imgs/operIco_01.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+a.contNews {
+    background: url(../imgs/operIco_02.png) no-repeat;
+}
+
+a.finaNews {
+    background: url(../imgs/operIco_03.png) no-repeat;
+}
+
+a.dele {
+    background: url(../imgs/operIco_04.png) no-repeat;
+}
+
+a.download {
+    background: url(../imgs/operIco_05.png) no-repeat;
+}
+
+a.reback {
+    background: url(../imgs/mapToolIco_03.png) no-repeat;
+    background-size: 100%;
+}
+
+/*---end---*/
+
+
+/*---2017.3.1---*/
+.filterBar {
+    border: 1px solid #C0DAF2;
+    border-bottom: 0;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+.filterBar dl {
+    border-bottom: 1px solid #C0DAF2;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.filterBar dt {
+    float: left;
+    width: 110px;
+    text-align: right;
+    padding: 10px;
+}
+
+.filterBar dd {
+    float: left;
+    width: 70%;
+    padding: 10px 0 0 10px;
+    border-left: 1px dashed #C0DAF2;
+    margin-left: -1px;
+}
+
+.filterBar dd li {
+    float: left;
+    padding: 0 20px 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.filterBar dd .filterBtn {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.filterBar dd .filterBtn a.minBtn {
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.filterBar dd .filterBtn a.minBtn:hover {
+    text-decoration: none;
+}
+
+.filterBar dd li.selectFilt a {
+    color: #0B78D8;
+    font-weight: bold;
+}
+
+.filterBar dd li.selectFilt a:hover {
+    text-decoration: none;
+}
+
+.filterBar dd li.filterSubUl a {
+    background: url(../imgs/arrow_03.gif) no-repeat right center;
+    padding-right: 12px;
+}
+
+.filterBar dd li.filterSubUl .filterSubBar {
+    position: absolute;
+    left: -50px;
+    top: 17px;
+    width: 500px;
+    display: none;
+}
+
+.filterBar dd li.filterSubUl .filterSubBar .upArrow {
+    background: url(../imgs/arrow_08.png) no-repeat;
+    width: 18px;
+    height: 11px;
+    position: relative;
+    top: 0;
+    left: 54px;
+    margin-bottom: -1px;
+}
+
+.filterBar dd li.filterSubUl .filterSubBar ul {
+    border: 1px solid #A8CEEF;
+    background: #fff;
+    padding: 10px 0 0 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.filterBar dd li.filterSubUl ul a {
+    background: none;
+    padding-right: 0;
+}
+
+
+.chosenBar {
+    border: 1px solid #C0DAF2;
+    border-top: 0;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.chosenBar dl {
+    overflow: hidden;
+}
+
+.chosenBar dt {
+    float: left;
+    padding: 0 10px;
+}
+
+.chosenBar dd {
+    float: left;
+    border: 1px solid #c2c2c2;
+    padding: 0 18px 0 5px;
+    height: 22px;
+    line-height: 22px;
+    background: url(../imgs/close_03.png) no-repeat right center;
+    cursor: pointer;
+}
+
+.tableTop {
+    clear: both;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.tableTop .tableBtns {
+    float: right;
+    margin: 0;
+}
+
+.tableTop .msgNav {
+    float: left;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin-left: 3px;
+}
+
+.tableTop .msgNav li {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border-right: 1px solid #C2C2C2;
+    cursor: pointer;
+    background: #F5F5F5;
+    color: #737373;
+}
+
+.tableTop .msgNav li.endLi {
+    border-right: 0;
+}
+
+.tableTop .msgNav li:hover {
+    background: #FBFBFB;
+    color: #464646;
+}
+
+.tableTop .msgNav li.selectLi {
+    background: #FBFBFB;
+    color: #0B78D8;
+}
+
+.leftBar {
+    width: 150px;
+    float: left;
+    background: #F5F5F5;
+    border-right: 1px solid #c2c2c2;
+}
+
+.leftBar li {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.leftBar li a {
+    display: block;
+    outline: none;
+    color: #848484;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.leftBar li a:hover {
+    color: #464646;
+    text-decoration: none;
+    background: #FBFBFB;
+}
+
+.leftBar li.selectLNav a {
+    color: #464646;
+    background: #FBFBFB;
+    border-right: 2px solid #c2c2c2;
+}
+
+.rightMain {
+    float: left;
+    overflow: auto;
+    position: relative;
+}
+
+/*---end---*/
+
+/*---2017.4.25---*/
+.zaiHaiCX {
+    left: inherit;
+    right: 10px;
+    top: 10px;
+    margin: 0;
+}
+
+.zaiHaiCX .windEdit li {
+    overflow: hidden;
+}
+
+.zaiHaiCX .windEdit li label {
+    width: 100px;
+    float: left;
+}
+
+.zaiHaiCX .windEdit li ul {
+    float: left;
+    width: 290px;
+}
+
+.zaiHaiCX .windEdit li ul li {
+    margin: 0 5px 5px 5px;
+    float: left;
+    padding: 0;
+}
+
+.zaiHaiCX .windEdit li ul li a {
+    white-space: nowrap;
+}
+
+.zaiHaiCX .windEdit li ul li.selectLi a {
+    color: #0B78D8;
+    font-weight: bold;
+}
+
+.zaiHaiCX .windEdit li ul li a.more {
+    color: #999;
+    margin-left: 5px;
+}
+
+.zaiHaiCX .windEdit li ul li a.more:hover {
+    color: #0B78D8;
+    text-decoration: none;
+}
+
+.zaiHaiCX .windEdit .btns {
+    text-align: right;
+    padding: 10px 10px 5px 0;
+}
+
+.leftTopDiv {
+    left: 10px;
+    top: 10px;
+    margin: 0;
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+.leftTopDiv .treeList li span {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    padding: 0;
+}
+
+.listTableWin {
+    width: 80%;
+    margin-left: -40%;
+}
+
+.listTableWin .windTableList td {
+    white-space: nowrap;
+}
+
+.listTableWin .windowOverflow {
+    overflow: auto;
+    width: 100%;
+}
+
+.zaiQingXQ {
+    width: 800px;
+    margin-left: -400px;
+}
+
+.winTabMenu {
+    background: #D3E9FC url(../imgs/border_01.gif) left bottom repeat-x;
+    height: 34px;
+}
+
+.winTabMenu li {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+    border-right: 1px solid #C0DAF2;
+    cursor: pointer;
+    color: #666;
+}
+
+.winTabMenu li:hover {
+    background: #e0f0fd url(../imgs/border_01.gif) left bottom repeat-x;
+    color: #464646;
+}
+
+.winTabMenu li.selectMenu {
+    background: #fff;
+    color: #0B78D8;
+}
+
+.winTabCont div.winTabContLi {
+    display: none;
+    height: 350px;
+    overflow: auto;
+}
+
+.winTabCont div.winTabContLi h5 {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.windDetaTable {
+    padding: 0 10px 10px 10px;
+}
+
+.windDetaTable h3 {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.windDetaTable .mapBorder {
+    border-left: 1px solid #C0DAF2;
+    border-right: 1px solid #C0DAF2;
+    padding: 5px;
+}
+
+.windDetaTable .map {
+    border: 1px solid #dcdcdc;
+    height: 300px;
+    position: inherit;
+    margin: 0;
+}
+
+.paddingSize {
+    padding: 10px;
+}
+
+.winTabCont div.winTabContLi .tableList tbody th {
+    background: #F5FAFF;
+    border: 1px solid #C0DAF2;
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.btnsBar {
+    text-align: right;
+    padding: 10px 0;
+    clear: both;
+}
+
+/*---end---*/
